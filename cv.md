@@ -24,7 +24,7 @@
 
 ### Experience
 
-- [Frelance tasks](https://github.com/NexGenUA/freelance-01-02)
+- [Freelance tasks](https://github.com/NexGenUA/freelance-01-02)
 - 1 month work as freelance
 - 6 month self education
 
