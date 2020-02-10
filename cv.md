@@ -16,6 +16,7 @@
 - Tools: Webpack
 - Editors: WebStorm, VSCode, Sublime
 - Other experience: Node.js, SQL, MySQL
+- OS: Windows, Ubuntu
 
 ### Code examples:
 
