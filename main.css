@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro'), url('./assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed'), url('./assets/fonts/MYRIADPRO-COND.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Myriad Pro Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed Italic'), url('./assets/fonts/MYRIADPRO-CONDIT.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Light'), url('./assets/fonts/MyriadPro-Light.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold'), url('./assets/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold Italic'), url('./assets/fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed'), url('./assets/fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('./assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Italic'), url('./assets/fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Myriad Pro Bold Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed Italic'), url('./assets/fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+  }
+
+body {
+  font-family: "Myriad Pro";
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(99, 103, 124);
+}
+
+header {
+  display: flex;
+  height: 230px;
+  margin-top: 20px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-size: 22px;
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  outline: none;
+  margin: 0;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+}
+
+.photo__img {
+  border-radius: 50%;
+}
+
+.info-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: rgb(99, 103, 124);
+  width: 100%;
+  height: 45px;
+  margin: 5px 0;
+  padding-right: 20px;
+}
+
+.info-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.info-block {
+  height: 60px;
+  border-bottom: 1.5px solid rgb(99, 103, 124);
+  border-top: 1.5px solid rgb(99, 103, 124);
+}
+
+.info-list__item {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  position: relative;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.info-list__item:hover {
+  filter: sepia() saturate(10000%) hue-rotate(-50deg);
+}
+
+.info-list__item::after {
+  position: absolute;
+  left: -25px;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+}
+
+.info-list__item.email::after {
+  background-image: url(./assets/mail.svg);
+}
+
+.info-list__item.phone::after {
+  background-image: url(./assets/phone.svg);
+}
+
+.info-list__item.linkedin::after {
+  background-image: url(./assets/linkedin.svg);
+}
+
+.info-list__item.github::after {
+  background-image: url(./assets/github.svg);
+}
+
+.left {
+  width: 60%;
+  padding-left: 50px;
+}
+
+.title-h3 {
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0 10px 22px;
+}
+
+.title-h3::after {
+  position: absolute;
+  left: -30px;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  z-index: 1;
+}
+
+.title-h3.experience::after {
+  background-image: url(./assets/work.svg);
+}
+
+.title-h3.education::after {
+  background-image: url(./assets/graduate.svg);
+  width: 22px;
+  height: 22px;
+  background-size: 22px 22px;
+}
+
+.title-h3.certificates::after {
+  background-image: url(./assets/award.svg);
+  width: 22px;
+  height: 22px;
+  background-size: 22px 22px;
+}
+
+.title-h3.skills::after {
+  background-image: url(./assets/settings.svg);
+}
+
+.title-h3.languages::after {
+  background-image: url(./assets/languages.svg);
+  width: 23px;
+  height: 23px;
+  background-size: 23px 23px;
+}
+
+.title-h3.about::after {
+  background-image: url(./assets/info.svg);
+}
+
+.title-h4::after {
+  position: absolute;
+  left: -6px;
+  bottom: -1px;
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-size: 11px 11px;
+  background-image: url(./assets/check.svg)
+}
+
+.title-h4 {
+  color: rgb(72, 72, 72);
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  border-left: 1.5px solid rgb(99, 103, 124);
+  margin-bottom: 5px;
+}
+
+.title-h4__date {
+  color: rgb(72, 72, 72);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.title-h4__desc {
+  border-left: 1.5px solid rgb(99, 103, 124);
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 20px;
+  color: rgb(72, 72, 72);
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.content {
+  border-left: 1.5px solid rgb(99, 103, 124);
+  padding-left: 20px;
+  color: rgb(72, 72, 72);
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.content>ul {
+  margin-left: 15px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+  background-color: rgb(99, 103, 124);
+  height: 25px;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  height: 1.5px;
+  background-color: rgb(99, 103, 124);
+}
+
+.right {
+  width: 40%;
+  margin-left: 80px;
+}
+
+.level {
+  display: inline-block;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+}
+
+.skills-table {
+  width: 100%;
+}
+
+.skills-table tr td + td {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.level.full {
+  background-color: rgb(99, 103, 124);
+}
+
+.level.empty {
+  box-shadow: 0 0 0 2px rgb(99, 103, 124) inset;
+}
+
+.content.about {
+  border-left: 0;
+  padding-left: 0;
+}
